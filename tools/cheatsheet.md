@@ -1,1 +1,0 @@
-Cheatsheet of common commands
