@@ -1,12 +1,50 @@
-# Cyber Bootcamp Playbook (Your Notes Integrated)
 
-Scaffold generated on 2025-10-12. This repo contains your cleaned bootcamp notes, lab walkthroughs, and safe helper scripts.
-Everything is organized into three areas:
-- `1_INTEL/` — theory & cheat-sheets
-- `2_ARSENAL/` — tool playbooks
-- `3_CAMPAIGN/` — lab walkthroughs & processes
-- `notes/` — your cleaned notes (converted from your paste)
-- `scripts/` — safe helper scripts (non-exploit)
-- `resources/` — curated links
+---
 
-**Important:** All commands and walkthroughs are for **authorized lab environments only** (TryHackMe, HackTheBox, CTF). Do NOT run them against systems you do not own or have explicit permission to test.
+📚 Latest updates
+-----------------
+- ✅ Added: cleaned Security+ study notes — CIA Triad & Access Controls  
+- ✅ Added: Mr Robot — TryHackMe authorized lab walkthrough (sanitized)  
+- ✅ Added: helper scripts — `nmap_xml_to_md.py`, `subnet_calc.py`, `http_enum.py`  
+- 🔜 Coming: SOC lab exercises and Splunk examples from Ironhack modules  
+- 🔜 Coming: more forensic walkthroughs (memory/disk capture + analysis)
+
+---
+
+🎓 Background — who I am
+-------------------------
+I’m Matheus Carvalho — transitioning from production operations (5+ years at La Poste) into cybersecurity. I bring practical experience in:
+- system monitoring & anomaly detection  
+- incident escalation & response under pressure  
+- process compliance and operational quality  
+- collaborating in high-volume, deadline-driven teams
+
+Goal: become a capable SOC Analyst and progress towards Threat Intelligence & Incident Response roles.
+
+---
+
+🧭 How I use this repo (short)
+------------------------------
+1. Run scans and save outputs (e.g. `nmap -oX findings.xml <target>`).  
+2. Convert and summarize (`python3 scripts/nmap_xml_to_md.py findings.xml`).  
+3. Add screenshots and logs to `notes/<lab>` (sanitize before sharing).  
+4. Work in branches (feature/ or matheus/) and open PRs for major additions.
+
+---
+
+🔒 Safety & ethics
+------------------
+All walkthroughs and commands are intended for **authorized lab environments only**. Never use these techniques on production systems or systems you do not have explicit permission to test.
+
+---
+
+📫 Connect
+---------
+- LinkedIn: https://www.linkedin.com/in/matheusincyber  
+- Email: matheusincyber@gmail.com
+
+If you find anything useful or have feedback — I welcome it. Learning in public helps me get better and helps others learn, too.
+
+---
+
+© Matheus Carvalho — MIT License (see `LICENSE`)
