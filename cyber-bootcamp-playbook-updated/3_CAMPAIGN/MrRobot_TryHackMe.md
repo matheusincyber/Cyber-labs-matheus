@@ -80,5 +80,3 @@ chmod +x linpeas.sh
 python3 scripts/nmap_xml_to_md.py findings.xml > nmap_findings.md
 ```
 
-## 6) Raw logs & notes
-- Store raw logs under `notes/` and link them in reports.
