@@ -1,31 +1,14 @@
 # 🔒 Cyber Labs — Matheus Carvalho
 
-Hands-on cybersecurity labs, SOC notes, write-ups and small tools.
+Hands-on cybersecurity labs, notes, write-ups and small tools.
 
 This repo is where I organize my learning from TryHackMe, Ironhack, Security+, home labs and personal cybersecurity projects.
 
-The goal is to keep everything clean enough for recruiters, but still real enough to show the work behind it.
+The goal is to keep everything clean, useful and easy to review.
 
 ![Repo ready](https://img.shields.io/badge/repo-ready-brightgreen)
 ![Focus](https://img.shields.io/badge/focus-SOC%20%7C%20Blue%20Team%20%7C%20IR-blue)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
-
-## Latest updates
-
-✅ Added Mini SOC Lab with Splunk, Sysmon, Windows and Kali
-✅ Added failed login detection using Windows Security Event ID 4625
-✅ Added PowerShell execution detection using Sysmon Event ID 1
-✅ Added Nmap scan simulation from Kali against a monitored Windows host
-✅ Added cleaned Security+ study notes on CIA Triad and Access Controls
-✅ Added sanitized TryHackMe Mr Robot walkthrough
-✅ Added helper scripts for parsing, subnetting and basic enumeration
-
-Coming soon:
-
-✅ DNS Security Dashboard with ad blocking, DNS visibility and client monitoring
-✅ Active Directory attack and defense lab
-✅ Threat Intelligence lab with Python and IOC reporting
-✅ More forensic walkthroughs and incident notes
 
 ## About me
 
@@ -35,154 +18,90 @@ I’m transitioning from production operations into cybersecurity, with a focus 
 
 My background includes operational monitoring, incident escalation, process control, documentation and working under pressure in high-volume environments.
 
-I’m using this repo to show practical progress, not just certificates or course names.
+This repo is here to show practical work, not just course names.
 
-## Featured project: Mini SOC Lab
+## Featured project
 
-Path:
+### Mini SOC Lab
 
-```text
-labs/blue-team/mini-soc-lab/
-```
+A home SOC lab using Windows, Kali Linux, Sysmon and Splunk.
 
-This is a small SOC lab built with Windows, Kali Linux, Sysmon and Splunk.
+The lab simulates suspicious activity and shows how it can be detected and investigated using logs.
 
-The lab simulates basic suspicious activity and shows how it can be detected and investigated using logs.
-
-Tools used:
+Covered so far:
 
 ```text
-Windows
-Kali Linux
-Splunk
-Sysmon
-Windows Security logs
-PowerShell
-Nmap
-SMB testing
-MITRE ATT&CK
-```
-
-What it covers:
-
-```text
-Splunk log collection
-Sysmon process monitoring
-Windows authentication logs
 PowerShell execution detection
 Failed login detection
 Nmap scan simulation
-Incident reports
-Detection notes
-Screenshots
+Splunk log investigation
+Sysmon process monitoring
+Windows Security Event analysis
+Incident reporting
 MITRE ATT&CK mapping
 ```
 
-Detection examples:
+Project folder:
 
-| Scenario             | Log source                     | What it shows                               |
-| -------------------- | ------------------------------ | ------------------------------------------- |
-| PowerShell execution | Sysmon Event ID 1              | Process creation and command activity       |
-| Failed login attempt | Windows Security Event ID 4625 | Bad username or password from Kali SMB test |
-| Nmap scan simulation | Kali and Windows logs          | Basic reconnaissance against the lab host   |
+[`labs/blue-team/mini-soc-lab/`](labs/blue-team/mini-soc-lab/)
 
-Related folders:
+## Coming soon
 
-```text
-labs/blue-team/mini-soc-lab/detections/
-labs/blue-team/mini-soc-lab/incident-reports/
-labs/blue-team/mini-soc-lab/splunk-queries/
-labs/blue-team/mini-soc-lab/screenshots/
-```
+### DNS Security Dashboard
 
-## Coming soon: DNS Security Dashboard
+A home network security project focused on DNS filtering, ad blocking and network visibility.
 
-Path:
+The idea is to build a dashboard that shows blocked requests, active client IPs, top domains and DNS activity over time.
 
-```text
-labs/blue-team/dns-security-dashboard/
-```
+Planned folder:
 
-This will be a home network project focused on DNS filtering, ad blocking and network visibility.
+[`labs/blue-team/dns-security-dashboard/`](labs/blue-team/dns-security-dashboard/)
 
-The idea is to build more than a basic adblocker. I want a dashboard that shows what is being blocked, which devices are active and which domains are being requested the most.
+### Active Directory Attack and Defense Lab
 
-Planned features:
+A Windows domain lab focused on authentication monitoring, account activity, group changes and defensive investigation.
 
-```text
-Network-wide DNS filtering with Pi-hole or AdGuard Home
-Blocked vs allowed DNS queries
-Top blocked domains
-Top allowed domains
-Most active client IPs
-Blocked requests per device
-Recent suspicious domains
-Query trends over time
-Optional Grafana dashboard
-Optional Python parser for custom reports
-Possible traffic visibility later with router stats or ntopng
-```
+### Threat Intelligence Lab
 
-Skills this should show:
-
-```text
-DNS monitoring
-Network visibility
-Dashboarding
-Log parsing
-Python scripting
-Home network hardening
-Basic threat visibility
-Privacy and tracker reduction
-```
+A Python-based project for IOC parsing, enrichment and reporting.
 
 ## Repo structure
 
 ```text
 docs/
-  Security+ notes
-  networking notes
-  SIEM notes
-  forensics notes
-  web security notes
+  Study notes and cybersecurity concepts
 
 labs/
-  blue-team/
-    mini-soc-lab/
-    dns-security-dashboard/        coming soon
-
-  tryhackme/
-    mr-robot/
-    wireshark-incident-response/
-    basic-pentesting/
+  Hands-on labs and project write-ups
 
 scripts/
-  nmap_xml_to_md.py
-  subnet_calc.py
-  http_enum.py
+  Small Python helpers and automation tools
 
 tools/
-  cheatsheet.md
+  Cheatsheets and commands
 ```
 
-## Why this repo exists
+## Quick links
 
-I want this repo to show how I learn and how I investigate.
+Docs: [`docs/`](docs/)
+Labs: [`labs/`](labs/)
+Blue Team Labs: [`labs/blue-team/`](labs/blue-team/)
+Scripts: [`scripts/`](scripts/)
+Tools: [`tools/`](tools/)
 
-For each serious lab, I try to include:
+## What this repo shows
 
 ```text
-The goal of the lab
-The tools used
-The commands or process followed
-Screenshots
-Detection logic
+SOC investigation workflow
+Windows log analysis
+Splunk searches
+Sysmon telemetry
 Incident notes
-Defensive takeaways
-Lessons learned
+TryHackMe write-ups
+Security+ study notes
+Python scripting
+Documentation practice
 ```
-
-That is more useful than just saying “I know Splunk” or “I’m passionate about cybersecurity,” which everyone writes until LinkedIn turns into soup.
 
 ## Lab write-up policy
 
@@ -191,15 +110,6 @@ All write-ups are cleaned and sanitized.
 I do not include private credentials, real public IPs, unauthorized targets or platform flags.
 
 The focus is methodology, investigation process and defensive learning.
-
-## Quick links
-
-Docs: [`docs/`](docs/)
-Labs: [`labs/`](labs/)
-Blue Team Labs: [`labs/blue-team/`](labs/blue-team/)
-Scripts: [`scripts/`](scripts/)
-Cheatsheet: [`tools/cheatsheet.md`](tools/cheatsheet.md)
-License: [`LICENSE`](LICENSE)
 
 ## Contact
 
