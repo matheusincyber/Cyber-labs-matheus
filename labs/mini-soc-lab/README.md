@@ -21,24 +21,37 @@ Documenting evidence with screenshots
 Mapping activity to MITRE ATT&CK
 ```
 
-## Lab architecture
+## Architecture
+
+![Mini SOC Lab Architecture](architecture/lab-architecture.png)
 
 ```text
 Kali Linux
-  Attacker and simulation machine
+  Simulates suspicious activity
+  Examples: Nmap scan, SMB failed login attempt
 
-Windows host
+Windows Host
   Monitored endpoint
+  Runs Sysmon and generates Windows Security logs
 
 Sysmon
-  Endpoint telemetry and process creation logs
+  Collects endpoint telemetry
+  Example: Event ID 1 for process creation
 
-Windows Security logs
-  Authentication and login events
+Windows Security Logs
+  Collect authentication events
+  Example: EventCode 4625 for failed logins
 
 Splunk
-  SIEM used to search, investigate and document activity
+  Central place to search, investigate and document events
 ```
+
+Lab flow:
+
+```text
+Kali Linux  →  Windows Host  →  Sysmon / Windows Logs  →  Splunk  →  Detection Notes / Incident Reports
+```
+
 
 ## Lab network
 
