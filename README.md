@@ -43,7 +43,7 @@ MITRE ATT&CK mapping
 
 Project folder:
 
-[`labs/blue-team/mini-soc-lab/`](labs/blue-team/mini-soc-lab/)
+[`labs/mini-soc-lab/`](labs/mini-soc-lab/)
 
 ## Coming soon
 
