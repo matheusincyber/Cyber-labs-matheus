@@ -1,0 +1,2 @@
+source="WinEventLog:Microsoft-Windows-Sysmon/Operational" "powershell.exe"
+| table _time host source sourcetype _raw

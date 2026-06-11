@@ -1,0 +1,5 @@
+source="WinEventLog:Microsoft-Windows-Sysmon/Operational" "192.168.56"
+
+source="WinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=3
+
+source="WinEventLog:Microsoft-Windows-Sysmon/Operational" ("135" OR "139" OR "445" OR "5357" OR "5432" OR "8000" OR "8089")

@@ -1,0 +1,4 @@
+flowchart LR
+    A[Kali Linux VM<br/>Attacker / Simulation<br/>Nmap, smbclient] --> B[Windows Host<br/>Sysmon + Security Logs]
+    B --> C[Splunk Enterprise<br/>SIEM Search + Reporting]
+    C --> D[GitHub Documentation<br/>Detections + Incident Reports + Screenshots]
